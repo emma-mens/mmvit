@@ -7,8 +7,8 @@ common:
   tensorboard_logging: false
   grad_clip: 10.0
 dataset:
-  root_train: "/mnt/imagenet/training"
-  root_val: "/mnt/imagenet/validation"
+  root_train: "/gscratch/scrubbed/emazuh/imagenet/ILSVRC/Data/CLS-LOC/train/"
+  root_val: "/gscratch/scrubbed/emazuh/imagenet/ILSVRC/Data/CLS-LOC/val/"
   name: "imagenet"
   category: "classification"
   train_batch_size0: 64 # effective batch size of 128 (64 x 2 GPUs)
